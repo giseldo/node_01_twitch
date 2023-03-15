@@ -1,0 +1,21 @@
+<html>
+<body>
+    <h1>Tela de Cadastro</h1>
+    <h1><%= title %></h1>
+    <ul>
+        <% for (var i=0; i<usuarios.length; i++) {   %>
+        <li>
+            Nome: <%=usuarios[i].nome %>
+        </li>
+        <% } %>
+    </ul>
+
+    <input type="text" id="txtnome"/>
+
+    <script>
+        txtnome = document.getElementById("txtnome");
+        txtnome.value = "Ola Mundo";
+        alert("Ola Mundo!!")
+    </script>
+</body>
+</html>
